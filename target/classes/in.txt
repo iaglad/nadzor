@@ -1,0 +1,5 @@
+POST http://www.pharmex.com.ua HTTP/1.1
+Host: www.pharmex.com.ua
+Range-Unit: 2015 | 1024
+User-Agent: HTTPClient
+
