@@ -10,7 +10,7 @@ public class PharmFinder {
     }
     public ArrayList<String> Find(String keywords) throws IOException
     {
-        Integer finders_count = 16;
+        Integer finders_count = 17;
         ArrayList<String> results = new ArrayList<String>();
 
 
@@ -112,11 +112,17 @@ public class PharmFinder {
 //        results.add("Результаты с сайта " + xdmu.messengers[8]);
 //        results.addAll(xdmu.Results);
 //
-        System.out.println("hepatology - 16 - " + Integer.toString(finders_count));
-        Hepatology hepatology = new Hepatology(keywords);
-        hepatology.ProcessSearch();
-        results.add("Результаты с сайта http://hepatology.org.ua");
-        results.addAll(hepatology.Results);
+//        System.out.println("hepatology - 16 - " + Integer.toString(finders_count));
+//        Hepatology hepatology = new Hepatology(keywords);
+//        hepatology.ProcessSearch();
+//        results.add("Результаты с сайта http://hepatology.org.ua");
+//        results.addAll(hepatology.Results);
+//
+        System.out.println("hepatology - 17 - " + Integer.toString(finders_count));
+        Nanu nanu = new Nanu(keywords);
+        nanu.ProcessSearch();
+        results.add("Результаты с сайта http://dopovidi-nanu.org.ua");
+        results.addAll(nanu.Results);
 //
 
         return results;
