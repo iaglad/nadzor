@@ -10,7 +10,7 @@ public class PharmFinder {
     }
     public ArrayList<String> Find(String keywords) throws IOException
     {
-        Integer finders_count = 17;
+        Integer finders_count = 19;
         ArrayList<String> results = new ArrayList<String>();
 
 
@@ -118,11 +118,23 @@ public class PharmFinder {
 //        results.add("Результаты с сайта http://hepatology.org.ua");
 //        results.addAll(hepatology.Results);
 //
-        System.out.println("hepatology - 17 - " + Integer.toString(finders_count));
-        Nanu nanu = new Nanu(keywords);
-        nanu.ProcessSearch();
-        results.add("Результаты с сайта http://dopovidi-nanu.org.ua");
-        results.addAll(nanu.Results);
+//        System.out.println("dopovidi-nanu - 17 - " + Integer.toString(finders_count));
+//        Nanu nanu = new Nanu(keywords);
+//        nanu.ProcessSearch();
+//        results.add("Результаты с сайта http://dopovidi-nanu.org.ua");
+//        results.addAll(nanu.Results);
+//
+//        System.out.println("ecpb - 18 - " + Integer.toString(finders_count));
+//        Ecpb ecpb = new Ecpb(keywords);
+//        ecpb.ProcessSearch();
+//        results.add("Результаты с сайта http://ecpb.org.ua/");
+//        results.addAll(ecpb.Results);
+//
+        System.out.println("mif-ua - 19 - " + Integer.toString(finders_count));
+        Mif mif = new Mif(keywords);
+        mif.ProcessSearch();
+        results.add("Результаты с сайта http://mif-ua.com/");
+        results.addAll(mif.Results);
 //
 
         return results;
