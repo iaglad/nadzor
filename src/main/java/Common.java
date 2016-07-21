@@ -11,11 +11,18 @@ import java.net.URL;
 import java.net.URLEncoder;
 import java.util.ArrayList;
 
-public class Mztu extends  Base
+public class Common extends  Base
 {
-    public Mztu(String _keywords)
+    String[] messengers = new String[] {
+            "http://www.mztu.com.ua/",        //0
+            "http://www.ujdvc.com.ua/"};                                 //1
+
+    public Common(String _keywords, int i)
     {
-        super(_keywords, "http://www.mztu.com.ua/", "search_res.php?q=");
+        super(_keywords, "", "");
+        BaseUrl = messengers[i];
+        FindUrl = BaseUrl + "search_res.php?q=";
+
     }
 
     public void ProcessSearch() throws IOException
@@ -46,10 +53,7 @@ public class Mztu extends  Base
                 try
                 {
                     spot = doc.getElementById("major_content_left_top").select("a[href]");
-                } catch (Exception e)
-                {
-                    e.printStackTrace();
-                }
+                } catch (Exception e) {}
                 if (spot != null)
                     for (Element link : spot)
                     {

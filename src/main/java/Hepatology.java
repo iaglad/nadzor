@@ -22,7 +22,6 @@ public class Hepatology extends Base
 
         if (Keywords.length() > 0)
         {
-            //_s = FindUrl + Keywords;
             try
             {
                 do
@@ -37,10 +36,7 @@ public class Hepatology extends Base
                     try
                     {
                         spot = doc.getElementsByClass("col-md-8").last().children();
-                    } catch (Exception e)
-                    {
-                        e.printStackTrace();
-                    }
+                    } catch (Exception e) {}
                     if (spot !=null)
                     {
                         for (Element link : spot)

@@ -36,10 +36,7 @@ public class Dec extends Base
             try
             {
                 spot = doc.getElementsByClass("search-results").first().getAllElements();
-            } catch (Exception e)
-            {
-                e.printStackTrace();
-            }
+            } catch (Exception e) {}
             if (spot != null)
             {
                 String s = "";

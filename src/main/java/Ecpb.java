@@ -38,17 +38,11 @@ public class Ecpb extends Base
                 {
                     //spot = doc.getElementsByClass("entry-title");
                     spot = doc.getElementsByClass("hentry");
-                } catch (Exception e)
-                {
-                    e.printStackTrace();
-                }
+                } catch (Exception e) {}
                 try
                 {
                     nav = doc.getElementsByClass("nav-previous");
-                } catch (Exception e)
-                {
-                    e.printStackTrace();
-                }
+                } catch (Exception e) {}
                 if (spot != null)
                 {
                     for (Element link : spot)

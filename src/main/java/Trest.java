@@ -8,8 +8,10 @@ public class Trest
         PharmFinder pf = new PharmFinder();
 
         //ArrayList<String> results = pf.Find("лікування");
+        //ArrayList<String> results = pf.Find("терапія");
         //ArrayList<String> results = pf.Find("синтез");
-        ArrayList<String> results = pf.Find("интерферон");
+        //ArrayList<String> results = pf.Find("интерферон");
+        ArrayList<String> results = pf.Find("нирок");
 
 
         for( String entry : results )

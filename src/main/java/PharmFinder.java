@@ -10,9 +10,8 @@ public class PharmFinder {
     }
     public ArrayList<String> Find(String keywords) throws IOException
     {
-        Integer finders_count = 19;
+        Integer finders_count = 24;
         ArrayList<String> results = new ArrayList<String>();
-
 
 //        System.out.println("therapia - 1 - " + Integer.toString(finders_count));
 //        Therapia therapia = new Therapia(keywords);
@@ -21,7 +20,7 @@ public class PharmFinder {
 //        results.addAll(therapia.Results);
 //
 //        System.out.println("xdmu 0 - 2 - " + Integer.toString(finders_count));
-        Xdmu xdmu = new Xdmu(keywords, 0);
+//        Xdmu xdmu = new Xdmu(keywords, 0);
 //        xdmu.ProcessSearch();
 //        results.add("Результаты с сайта " + xdmu.messengers[0]);
 //        results.addAll(xdmu.Results);
@@ -81,7 +80,7 @@ public class PharmFinder {
 //        results.addAll(medix.Results);
 //
 //        System.out.println("mztu - 11 - " + Integer.toString(finders_count));
-//        Mztu mztu = new Mztu(keywords);
+//        Common mztu = new Common(keywords, 0);
 //        mztu.ProcessSearch();
 //        results.add("Результаты с сайта mztu.com.ua");
 //        results.addAll(mztu.Results);
@@ -105,7 +104,7 @@ public class PharmFinder {
 //        results.add("Результаты с сайта " + xdmu.messengers[7]);
 //        results.addAll(xdmu.Results);
 //
-//        System.out.println("http://nphj.nuph.edu.ua - 15 - " + Integer.toString(finders_count));
+//        System.out.println("nphj.nuph.edu.ua - 15 - " + Integer.toString(finders_count));
 //        xdmu = null;
 //        xdmu = new Xdmu(keywords, 8);
 //        xdmu.ProcessSearch();
@@ -130,11 +129,35 @@ public class PharmFinder {
 //        results.add("Результаты с сайта http://ecpb.org.ua/");
 //        results.addAll(ecpb.Results);
 //
-        System.out.println("mif-ua - 19 - " + Integer.toString(finders_count));
-        Mif mif = new Mif(keywords);
-        mif.ProcessSearch();
-        results.add("Результаты с сайта http://mif-ua.com/");
-        results.addAll(mif.Results);
+//        System.out.println("mif-ua - 19 - " + Integer.toString(finders_count));
+//        Mif mif = new Mif(keywords);
+//        mif.ProcessSearch();
+//        results.add("Результаты с сайта http://mif-ua.com/");
+//        results.addAll(mif.Results);
+//
+//        System.out.println("medpers - 20 - " + Integer.toString(finders_count));
+//        Medpers medpers = new Medpers(keywords);
+//        medpers.ProcessSearch();
+//        results.add("Результаты с сайта http://medpers.dsma.dp.ua");
+//        results.addAll(medpers.Results);
+//
+//        System.out.println("rhpt - 21 - " + Integer.toString(finders_count));
+//        Rpht rpht = new Rpht(keywords);
+//        rpht.ProcessSearch();
+//        results.add("Результаты с сайта http://rpht.com.ua");
+//        results.addAll(rpht.Results);
+//
+//        System.out.println("umsa - 22 - " + Integer.toString(finders_count));
+//        Umsa umsa = new Umsa(keywords);
+//        umsa.ProcessSearch();
+//        results.add("Результаты с сайта http://umsa.edu.ua");
+//        results.addAll(umsa.Results);
+//
+//        System.out.println("ujdvc - 23 - " + Integer.toString(finders_count));
+//        Common ujdvc = new Common(keywords, 0);
+//        ujdvc.ProcessSearch();
+//        results.add("Результаты с сайта http://ujdvc.com.ua");
+//        results.addAll(ujdvc.Results);
 //
 
         return results;

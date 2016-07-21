@@ -24,7 +24,6 @@ public class Nanu extends Base
 
         if (Keywords.length() > 0)
         {
-            //_s = FindUrl + Keywords;
             try
             {
                 do
@@ -39,10 +38,7 @@ public class Nanu extends Base
                     try
                     {
                         spot = doc.getElementsByClass("biblio-category-section");
-                    } catch (Exception e)
-                    {
-                        e.printStackTrace();
-                    }
+                    } catch (Exception e) {}
                     if (spot !=null)
                     {
                         for (Element link : spot)

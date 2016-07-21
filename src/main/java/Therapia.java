@@ -33,10 +33,8 @@ public class Therapia extends Base
             try
             {
                 spot = doc.getElementsByClass("searchspot");
-            } catch (Exception e)
-            {
-                e.printStackTrace();
-            }
+            } catch (Exception e) {}
+
             if (spot != null)
             {
                 for (Element link : spot)

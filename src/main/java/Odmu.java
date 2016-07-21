@@ -30,24 +30,17 @@ public class Odmu extends Base
                             .userAgent(UserAgent)
                             .timeout(0)
                             .get();
-                } catch (Exception e) {
-                    break;}
+                } catch (Exception e) {break;}
 
                 Elements spot = null, nav = null;
                 try
                 {
                     spot = doc.getElementsByClass("post");
-                } catch (Exception e)
-                {
-                    e.printStackTrace();
-                }
+                } catch (Exception e) {}
                 try
                 {
                     nav = doc.getElementsByClass("nav-previous");
-                } catch (Exception e)
-                {
-                    e.printStackTrace();
-                }
+                } catch (Exception e) {}
                 if (spot != null)
                 {
                     for (Element link : spot)
